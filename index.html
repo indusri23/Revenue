@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Revenue Management</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="images/logo1.png" alt=""></div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+    </nav>
+  </header>
+  <style>
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h1 span {
+      color: orange;
+    }
+
+    .section {
+      border-top: 1px solid #eee;
+      padding: 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .section:first-child {
+      border-top: none;
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #555;
+    }
+
+    
+    .img-box {
+  flex: 1;
+  /* background: #f4f4f4; */
+  height: 160px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+    .highlight-box {
+      width: 140px;
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 12px;
+      color: #888;
+      text-align: center;
+    }
+
+    .performance-card {
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 10px;
+      width: 180px;
+      font-size: 12px;
+      color: #444;
+    }
+
+    .price-box {
+      width: 120px;
+      height: 140px;
+      background: #f4f4f4;
+      border-radius: 8px;
+    }
+
+    .scenario-table {
+      font-size: 12px;
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .scenario-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .scenario-table th,
+    .scenario-table td {
+      text-align: left;
+      padding: 6px 0;
+    }
+    .revenue-section{
+        background: #FFF7EC;
+    }
+    .section-third{
+        padding: 20px;
+        background: #FFF7EC;
+    }
+  </style>
+
+  <section class="revenue-section">
+    <div class="text-content">
+      <h1>Revenue Management</h1>
+      <p>The art and science of having the optimal portfolio mix at the right price and discount levels that reflect your brand equity, competitive advantage, and shopper behavior.</p>
+      <p>Recent global trends in raw material costs, fast innovation by historically low-cost brands and growth of digital commerce platforms have challenged traditional methods of revenue management at large organizations, highlighting the urgent need for innovation in this field.</p>
+      <button onclick="handleClick()">Get started</button>
+    </div>
+    <div class="image-content">
+      <img src="images/first.png" alt="Revenue Management Image" />
+    </div>
+  </section>
+  <!-- next section -->
+  <section class="pillars-section">
+    <h1>Strengthen the pillars of your <br /><span>Revenue Management Function</span></h1>
+  <div class="container">
+    <div class="section">
+      <div class="text">
+        <div class="title">Strategic Pricing</div>
+        <div class="desc">Evaluate whether your price helps or kills your assortment performance. Using your competitive analysis, this insight fits in perfect for a future game.</div>
+      </div>
+      <div class="img-box"><img src="images/second-1.png" alt=""></div>
+    </div>
+
+    <div class="section">
+      <div class="img-box"><img src="images/second-2.png" alt=""></div>
+      <div class="text">
+        <div class="title">Promotion Optimization</div>
+        <div class="desc">Determine your historic base sales and analyze price elasticities to understand promotion cannibalization and sales trends to accurately plan future promotions.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="text">
+        <div class="title">Mix Management</div>
+        <div class="desc">Decide your future portfolio architecture to complement each other and thrive competitively, by allocating the individual brands into the right roles.</div>
+      </div>
+      <div class="img-box"><img src="images/second-3.png" alt=""></div>
+    </div>
+
+    <div class="section">
+        <div class="img-box"><img src="images/second-4.png" alt=""></div>
+      <div class="text">
+        <div class="title">Price Pack Architecture</div>
+        <div class="desc">Drive your brand's strategic differentiation via pack size, tracking performance relative to their individual TDPs.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="text">
+        <div class="title">Scenario Planning</div>
+        <div class="desc">Initiate what-if scenario planning. Run logic of different scenarios, map them to their respective measures and use the added logic to foresee future sales/projections.</div>
+      </div>
+      <div class="img-box"><img src="images/second-5.png" alt=""></div>
+    </div>
+  </div>
+  </section>
+  <!-- third section -->
+
+  <section class="section-third">
+    <div class="card-grid">
+        <div class="card">
+          <img src="images/icon1.png" alt="Icon">
+          <h3>Focus On Brand Equity</h3>
+          <p>Use your brand equity and competitive advantage to drive your pricing and promotional strategy</p>
+        </div>
+        <div class="card">
+          <img src="images/icon2.png" alt="Icon">
+          <h3>Multi-Stakeholder View</h3>
+          <p>Use our tool to enable a multi-stakeholder view of insights and strategic implications</p>
+        </div>
+        <div class="card">
+          <img src="images/icon3.png" alt="Icon">
+          <h3>Continuous Improvement</h3>
+          <p>Monitor your sales performance in real-time, set achievable targets, and gain progress to drive results and boost team motivation.</p>
+        </div>
+        <div class="card">
+          <img src="images/icon4.png" alt="Icon">
+          <h3>Predictive Accuracy</h3>
+          <p>Leverage embedded learnings from hundreds of past analyses and maximize your chances of realizing your business outcomes.</p>
+        </div>
+      </div>
+      
+  </section>
+
+  <!-- forth section -->
+  <section class="section-forth">
+    <div class="faq-section">
+        <h4>FAQ</h4>
+        <h2>Common questions and answers</h2>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            1. A leading Indian hair-care brand wanted to drive penetration, but their price was indexed higher than competition
+          </button>
+          <div class="faq-answer">
+            StoreX seamlessly integrates with a wide range of popular tools and services to enhance your eCommerce operations. Our supported integrations include Slack, Zapier, Mailchimp, AWS, Google Ads, Facebook Ads, TikTok, and various ERPs. These integrations allow you to streamline workflows, automate tasks, and connect your store with the essential tools you use every day.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <button class="faq-question">
+            2. A global FMCG brand wanted to develop their internal capability for optimal promotion...
+          </button>
+          <div class="faq-answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac justo vel nulla viverra tincidunt vel at nisi.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <button class="faq-question">
+            3. Revenue Management cannot operate in isolation. The optimal extent of price
+          </button>
+          <div class="faq-answer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac justo vel nulla viverra tincidunt vel at nisi.
+          </div>
+        </div>
+      </div>
+      
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <img src="images/logo.png" alt="Quant Matrix AI Logo" class="footer-logo">
+      <nav class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms & Condition</a>
+      </nav>
+      <p class="footer-email">info@quantmatrix.ai</p>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Untitled UI. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+  <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+  
+</body>
+</html>
